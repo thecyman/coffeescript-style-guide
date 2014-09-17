@@ -244,6 +244,13 @@ Methods and variables that are intended to be "private" should begin with a lead
 _privateMethod: ->
 ```
 
+The variable name should become increasingly accurate from right to left. Adjectives always go left. ([Reference](http://javascript.info/draft/variable-naming))
+
+```coffeescript
+greyDog = "Wolfy"
+newEdgeID = 2910
+```
+
 <a name="functions"/>
 ## Functions
 

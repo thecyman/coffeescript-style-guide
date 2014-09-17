@@ -41,6 +41,7 @@ The details in this guide have been very heavily inspired by several existing st
     * [Looping and Comprehensions](#looping_and_comprehensions)
     * [Extending Native Objects](#extending_native_objects)
     * [Exceptions](#exceptions)
+    * [Debugging](#debugging)
     * [Annotations](#annotations)
     * [Miscellaneous](#miscellaneous)
 
@@ -417,6 +418,12 @@ For example, do not modify `Array.prototype` to introduce `Array#forEach`.
 ## Exceptions
 
 Do not suppress exceptions.
+
+<a name="debugging"/>
+## Debugging
+
+Using `console.log()` should be avoided. Instead use [debug](https://github.com/visionmedia/debug).
+Remember to set your environment variable: `DEBUG="*"`
 
 <a name="annotations"/>
 ## Annotations

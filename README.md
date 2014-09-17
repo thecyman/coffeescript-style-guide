@@ -35,6 +35,7 @@ The details in this guide have been very heavily inspired by several existing st
         * [Inline Comments](#inline_comments)
     * [Naming Conventions](#naming_conventions)
     * [Functions](#functions)
+    * [Parameters](#parameters)
     * [Strings](#strings)
     * [Conditionals](#conditionals)
     * [Looping and Comprehensions](#looping_and_comprehensions)
@@ -105,11 +106,11 @@ UTF-8 is the preferred source file encoding.
 <a name="module_imports"/>
 ## Module Imports
 
-If using a module system (CommonJS Modules, AMD, etc.), `require` statements should be placed on separate lines.
+If using a module system (CommonJS Modules, AMD, etc.), `require` statements should be placed on separate lines and be in lowercase.
 
 ```coffeescript
 require 'lib/setup'
-Backbone = require 'backbone'
+backbone = require 'backbone'
 ```
 These statements should be grouped in the following order:
 
@@ -311,6 +312,24 @@ In cases where method calls are being chained, some adopters of this style prefe
 ```
 
 The function grouping style is not recommended. However, **if the function grouping style is adopted for a particular project, be consistent with its usage.**
+
+<a name="parameters"/>
+## Parameters
+
+Use [Codo](https://github.com/coffeedoc/codo) style, with curly brackets for function information and parameters. Block or single-line comments can be used:
+
+```coffeescript
+# Move the animal.
+#
+# @example Move an animal
+# new Lion('Simba').move('south', 12)
+#
+# @param {Object} options the moving options
+# @option options {String} direction the moving direction
+# @option options {Number} speed the speed in mph
+#
+move: (options = {}) ->
+```
 
 <a name="strings"/>
 ## Strings

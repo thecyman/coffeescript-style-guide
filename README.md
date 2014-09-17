@@ -247,8 +247,8 @@ _privateMethod: ->
 The variable name should become increasingly accurate from right to left. Adjectives always go left. ([Reference](http://javascript.info/draft/variable-naming))
 
 ```coffeescript
-greyDog = "Wolfy"
-newEdgeID = 2910
+greyDog = "Wolfy" # Yes
+newEdgeID = 2910 # Yes
 ```
 
 <a name="functions"/>
@@ -320,6 +320,13 @@ In cases where method calls are being chained, some adopters of this style prefe
 ```
 
 The function grouping style is not recommended. However, **if the function grouping style is adopted for a particular project, be consistent with its usage.**
+
+Function names should start with a verb. You may end function names with Fn
+```coffeescript
+makeStatement = (book, car) -> # Yes
+statementMaker = (book, car) -> # No
+writeFileFn = (fileName, data) -> # Yes
+```
 
 <a name="parameters"/>
 ## Parameters

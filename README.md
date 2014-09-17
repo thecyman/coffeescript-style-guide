@@ -316,7 +316,7 @@ The function grouping style is not recommended. However, **if the function group
 <a name="parameters"/>
 ## Parameters
 
-Use [Codo](https://github.com/coffeedoc/codo) style, with curly brackets for function information and parameters. Block or single-line comments can be used:
+Use [Codo](https://github.com/coffeedoc/codo) style, with curly braces for function information and parameters. Block or single-line comments can be used:
 
 ```coffeescript
 # Move the animal.

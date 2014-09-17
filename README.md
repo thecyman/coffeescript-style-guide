@@ -328,6 +328,13 @@ statementMaker = (book, car) -> # No
 writeFileFn = (fileName, data) -> # Yes
 ```
 
+When the length of function arguments is too long, you can put each argument on a different line, and indent.
+
+```coffeescript
+.let "vertexRID#{vertexIndex.toString()}",
+  _.bind(makeVertexStmtFn, vertex)
+```
+
 <a name="parameters"/>
 ## Parameters
 

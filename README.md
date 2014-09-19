@@ -119,6 +119,12 @@ These statements should be grouped in the following order:
 2. Third party library imports
 3. Local imports _(imports specific to this application or library)_
 
+If `require` needs more than 1 parameter, use this format:
+
+```coffeescript
+debug   = require("debug") "methodConverter"
+```
+
 <a name="whitespace"/>
 ## Whitespace in Expressions and Statements
 
